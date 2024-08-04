@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./pics/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <img src="./pics/library_icon.png" alt="icon">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box"> 
+                    <div class="box">
+                        <p class="box-p1">Create your first playlist</p>
+                        <p class="box-p2">It's easy, we'll help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="box-p1">Let's find some podcasts to follow</p>
+                        <p class="box-p2">We'll keep you updated on new episode</p>
+                        <button class="badge">Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky_nav">
+                <div class="sticky_icon">
+                    <img src="./pics/backward_icon.png" class="big">
+                    <img src="./pics/forward_icon.png" alt="" class="hide big">
+                </div>
+                <div class="sticky_option">
+                    <button class="badge hide big">Explore Premium</button>
+                    <button class="badge dark-badge big"><i class="fa-regular fa-circle-down down-icon"></i>Install App</button>
+                    <i class="fa-regular fa-user user-icon big"></i>    
+                </div>
+            </div>
+
+            <h2>Recently Played</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./pics/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./pics/card3img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./pics/card2img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./pics/card4img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./pics/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./pics/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./pics/viral50.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+
+                <div class="card">
+                    <img src="./pics/viral50usa.jpg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of most played tracks...</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="music-player">
+
+            <div class="artist-info">
+                
+                <div class="song-cover">
+                    <img src="./pics/joji.jpeg" alt="">
+                </div> 
+
+                <div class="song-info">
+                    <div class="song-name">Glimpse of Us</div>
+                    <div class="artist-name">Joji</div>
+                </div>
+
+                <div class="plus-icon">
+                    <input type="checkbox" id="heart-color">
+                    <div class="heart-blank">
+                        <label for="heart-color">
+                            <i class="fa-regular fa-heart"></i>
+                        </label>
+                    </div>
+                    <div class="heart-solid">
+                        <label for="heart-color">
+                            <i class="fa-solid fa-heart"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./pics/player_icon1.png" class="player-control-icon">
+                    <img src="./pics/player_icon2.png" class="player-control-icon">
+                    <img src="./pics/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./pics/player_icon4.png" class="player-control-icon">
+                    <img src="./pics/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                        <span class="curr-time">0:00</span>
+                        <input type="range" min= '0' max= '100' class="progress-bar" step="1">
+                        <span class="tot-time">3:54</span>
+                </div>
+            </div>
+
+            <div class="music-icon-option">
+                <i class="fa-solid fa-music"></i>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <i class="fa-solid fa-share"></i>
+                <div class="vol-range">
+                    <i class="fa-solid fa-volume-low"></i>
+                    <input type="range" min="0" max="100" step="1" class="volume">
+                </div>
+                <div class="hide-footer">    
+                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
